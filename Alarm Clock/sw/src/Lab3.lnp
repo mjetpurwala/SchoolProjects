@@ -1,0 +1,22 @@
+--cpu=Cortex-M4.fp.sp
+".\st7735.o"
+".\startup.o"
+".\lab3main.o"
+".\pll.o"
+".\timer0a.o"
+".\timer1a.o"
+".\timer2a.o"
+".\display.o"
+".\mainmenu.o"
+".\time.o"
+".\alarm.o"
+".\timer.o"
+".\stopwatch.o"
+".\sine.o"
+".\menu.o"
+".\settime.o"
+".\systick.o"
+".\setalarms.o"
+--library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Lab3.map" -o .\Lab3.axf

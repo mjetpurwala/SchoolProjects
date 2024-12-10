@@ -1,0 +1,10 @@
+.\timer.o: Timer.c
+.\timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\timer.o: ../inc/ST7735.h
+.\timer.o: ../inc/Timer2A.h
+.\timer.o: Display.h
+.\timer.o: Menu.h
+.\timer.o: Alarm.h
+.\timer.o: Stopwatch.h
+.\timer.o: Lab3.h

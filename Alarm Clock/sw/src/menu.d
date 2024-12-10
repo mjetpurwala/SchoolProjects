@@ -1,0 +1,10 @@
+.\menu.o: Menu.c
+.\menu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\menu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\menu.o: ../inc/ST7735.h
+.\menu.o: ../inc/tm4c123gh6pm.h
+.\menu.o: Display.h
+.\menu.o: Timer.h
+.\menu.o: SetTime.h
+.\menu.o: Alarm.h
+.\menu.o: Stopwatch.h

@@ -1,0 +1,13 @@
+.\setalarms.o: SetAlarms.c
+.\setalarms.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\setalarms.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\setalarms.o: ../inc/ST7735.h
+.\setalarms.o: ../inc/PLL.h
+.\setalarms.o: ../inc/tm4c123gh6pm.h
+.\setalarms.o: ../inc/Timer0A.h
+.\setalarms.o: ../inc/Sine.h
+.\setalarms.o: Display.h
+.\setalarms.o: Lab3.h
+.\setalarms.o: Menu.h
+.\setalarms.o: Timer.h
+.\setalarms.o: SetAlarms.h

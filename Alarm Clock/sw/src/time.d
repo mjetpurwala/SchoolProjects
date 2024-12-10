@@ -1,0 +1,9 @@
+.\time.o: Time.c
+.\time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\time.o: ../inc/ST7735.h
+.\time.o: ../inc/tm4c123gh6pm.h
+.\time.o: Display.h
+.\time.o: Timer.h
+.\time.o: SetTime.h
+.\time.o: Alarm.h

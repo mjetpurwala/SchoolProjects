@@ -1,0 +1,128 @@
+Dependencies for Project 'Lab3', Target 'Lab3': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (..\inc\ST7735.c)(0x66EC4C0E)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\st7735.o --omf_browse .\st7735.crf --depend .\st7735.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8EF392)
+I (..\inc\ST7735.h)(0x66F0DF2A)
+I (..\inc\../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+F (.\startup.s)(0x66EC4C0E)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include--pd "__UVISION_VERSION SETA 534" --pd "_RTE_ SETA 1" --pd "LM4F120 SETA 1" --pd "_RTE_ SETA 1"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\Lab3Main.c)(0x67156AE6)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\lab3main.o --omf_browse .\lab3main.crf --depend .\lab3main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (../inc/ST7735.h)(0x66F0DF2A)
+I (../inc/PLL.h)(0x66EC4C0D)
+I (../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+I (../inc/Timer0A.h)(0x66EC4C0E)
+I (../inc/Timer1A.h)(0x66EC4C0E)
+I (../inc/Timer2A.h)(0x66EC4C0E)
+I (../inc/Sine.h)(0x66F0DF2A)
+I (Lab3.h)(0x66F3188F)
+I (Display.h)(0x66F2F208)
+I (Menu.h)(0x66F30661)
+I (SetTime.h)(0x66F2289D)
+I (Timer.h)(0x66F3188F)
+F (..\inc\PLL.c)(0x66EC4C0D)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (..\inc\../inc/PLL.h)(0x66EC4C0D)
+I (..\inc\../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+F (..\inc\Timer0A.c)(0x66EC4C0E)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\timer0a.o --omf_browse .\timer0a.crf --depend .\timer0a.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (..\inc\../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+I (..\inc\../inc/CortexM.h)(0x66EC4C0D)
+F (..\inc\Timer1A.c)(0x66EC4C0E)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\timer1a.o --omf_browse .\timer1a.crf --depend .\timer1a.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (..\inc\../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+F (..\inc\Timer1A.h)(0x66EC4C0E)()
+F (..\inc\Timer2A.c)(0x66EC4C0E)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\timer2a.o --omf_browse .\timer2a.crf --depend .\timer2a.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (..\inc\../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+F (..\inc\Timer2A.h)(0x66EC4C0E)()
+F (.\Display.c)(0x66F2F42D)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\display.o --omf_browse .\display.crf --depend .\display.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (../inc/ST7735.h)(0x66F0DF2A)
+I (../inc/Sine.h)(0x66F0DF2A)
+I (Timer.h)(0x66F3188F)
+F (.\Display.h)(0x66F2F208)()
+F (.\MainMenu.c)(0x66F0DF2A)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\mainmenu.o --omf_browse .\mainmenu.crf --depend .\mainmenu.d)
+F (.\MainMenu.h)(0x66F0DF2A)()
+F (.\Time.c)(0x66F2F5AE)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\time.o --omf_browse .\time.crf --depend .\time.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (../inc/ST7735.h)(0x66F0DF2A)
+I (../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+I (Display.h)(0x66F2F208)
+I (Timer.h)(0x66F3188F)
+I (SetTime.h)(0x66F2289D)
+I (Alarm.h)(0x66F2E657)
+F (.\Time.h)(0x66F0DF2A)()
+F (.\Alarm.c)(0x66F3188F)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\alarm.o --omf_browse .\alarm.crf --depend .\alarm.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (../inc/ST7735.h)(0x66F0DF2A)
+I (../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+I (Timer.h)(0x66F3188F)
+F (.\Alarm.h)(0x66F2E657)()
+F (.\Timer.c)(0x67156AE6)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\timer.o --omf_browse .\timer.crf --depend .\timer.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (../inc/ST7735.h)(0x66F0DF2A)
+I (../inc/Timer2A.h)(0x66EC4C0E)
+I (Display.h)(0x66F2F208)
+I (Menu.h)(0x66F30661)
+I (Alarm.h)(0x66F2E657)
+I (Stopwatch.h)(0x66F308A4)
+I (Lab3.h)(0x66F3188F)
+F (.\Timer.h)(0x66F3188F)()
+F (.\Stopwatch.c)(0x67156AE7)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\stopwatch.o --omf_browse .\stopwatch.crf --depend .\stopwatch.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (../inc/ST7735.h)(0x66F0DF2A)
+I (../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+I (../inc/Timer1A.h)(0x66EC4C0E)
+I (Display.h)(0x66F2F208)
+I (Timer.h)(0x66F3188F)
+I (SetTime.h)(0x66F2289D)
+I (Alarm.h)(0x66F2E657)
+F (.\Stopwatch.h)(0x66F308A4)()
+F (..\inc\Sine.c)(0x66EC4C0E)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\sine.o --omf_browse .\sine.crf --depend .\sine.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+F (..\inc\Sine.h)(0x66F0DF2A)()
+F (.\Menu.c)(0x67156AE5)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\menu.o --omf_browse .\menu.crf --depend .\menu.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (../inc/ST7735.h)(0x66F0DF2A)
+I (../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+I (Display.h)(0x66F2F208)
+I (Timer.h)(0x66F3188F)
+I (SetTime.h)(0x66F2289D)
+I (Alarm.h)(0x66F2E657)
+I (Stopwatch.h)(0x66F308A4)
+F (.\Menu.h)(0x66F30661)()
+F (.\SetTime.c)(0x67156AE7)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\settime.o --omf_browse .\settime.crf --depend .\settime.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (../inc/ST7735.h)(0x66F0DF2A)
+I (../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+I (Timer.h)(0x66F3188F)
+F (.\SetTime.h)(0x66F2289D)()
+F (..\inc\Timer0A.h)(0x66EC4C0E)()
+F (..\inc\SysTick.c)(0x66EC4C0E)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\systick.o --omf_browse .\systick.crf --depend .\systick.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (..\inc\../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+F (..\inc\SysTick.h)(0x66EC4C0E)()
+F (.\SetAlarms.c)(0x66F2453C)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\..-I.\RTE\_Lab3-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="534" -D_RTE_ -DLM4F120 -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\setalarms.o --omf_browse .\setalarms.crf --depend .\setalarms.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
+I (../inc/ST7735.h)(0x66F0DF2A)
+I (../inc/PLL.h)(0x66EC4C0D)
+I (../inc/tm4c123gh6pm.h)(0x66EC4C0E)
+I (../inc/Timer0A.h)(0x66EC4C0E)
+I (../inc/Sine.h)(0x66F0DF2A)
+I (Display.h)(0x66F2F208)
+I (Lab3.h)(0x66F3188F)
+I (Menu.h)(0x66F30661)
+I (Timer.h)(0x66F3188F)
+I (SetAlarms.h)(0x66F24428)
+F (.\SetAlarms.h)(0x66F24428)()
