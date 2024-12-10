@@ -1,0 +1,19 @@
+Dependencies for Project 'Baymax', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\Baymax Main.c)(0x6742BF2F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -DTM4C123GH6PM-o "./objects/baymax main.o" -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\tm4c123gh6pm.h)(0x66FF1403)
+I (..\inc\LaunchPad.h)(0x66FF1403)
+I (..\inc\ST7735.h)(0x66FF1403)
+I (..\inc\PLL.h)(0x66FF1403)
+I (..\inc\CortexM.h)(0x66FF1403)
+I (..\inc\SSD1306.h)(0x66FF1403)
+I (..\inc\ADCSWTrigger.h)(0x66FF1403)
+I (..\inc\esp8266.h)(0x66FF1403)
+I (..\inc\MQTT.h)(0x66FF1403)
+I (..\inc\SSD2119.h)(0x66FF1403)
+F (..\inc\CortexM.h)(0x66FF1403)()
+F (..\inc\PLL.h)(0x66FF1403)()
+F (..\inc\SSD2119.h)(0x66FF1403)()
+F (..\inc\tm4c123gh6pm.h)(0x66FF1403)()

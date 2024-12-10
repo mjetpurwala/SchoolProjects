@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baymax - Emotions</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        /* Container styling for the emotions */
+        .emotion-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h1 {
+            color: #4b4b4b;
+            font-size: 36px;
+        }
+
+        .emotion {
+            font-size: 100px;
+            margin: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .emotion:hover {
+            transform: scale(1.2);
+        }
+
+        /* Styling for each emotion */
+        .happy {
+            color: #ffeb3b;
+        }
+
+        .sad {
+            color: #2196f3;
+        }
+
+        .angry {
+            color: #f44336;
+        }
+
+        .surprised {
+            color: #9c27b0;
+        }
+
+        /* Button style */
+        .button {
+            background-color: #009688;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .button:hover {
+            background-color: #00796b;
+        }
+
+        .button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<!-- Import Source Paho MQTT Client, our code is called at the bottom -->
+<script src="lib/mqttws31.js"></script>
+    <div class="emotion-container">
+        <h1>How are you feeling?</h1>
+        <p>Click on an emotion to choose how you're feeling today!</p>
+
+        <div>
+            <span class="emotion happy" onclick="alert('You feel happy!'); happy();">😊</span>
+            <span class="emotion sad" onclick="alert('You feel sad.'); sad();">😢</span>
+            <span class="emotion angry" onclick="alert('You feel angry!'); angry();">😠</span>
+            <span class="emotion surprised" onclick="alert('You feel surprised!'); surprised();">😮</span>
+        </div>
+
+        <!-- Return Button -->
+        <button class="button" onclick="back(); window.location.href='baemax.html';">Return to Main Page</button>
+    </div>
+
+<!-- Import code, and Start it up! (After page has loaded) -->
+<script src="fight_mode.js"></script>
+<script>connect();</script>
+
+
+</body>
+</html>

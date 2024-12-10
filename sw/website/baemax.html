@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baymax UI</title>
+    <style>
+        /* General styling */
+
+        .full-image {
+            background-image: "GERM.JPG";
+            background-size: cover; /* Ensures the image covers the area */
+            background-position: center; /* Centers the image */
+            height: 50%; /* Full height of the page */
+            width: 50%; /* Half width of the page */
+            float: left; /* Floats the image to the left */
+        }
+
+        /* Style for the other half of the screen */
+        .content {
+            width: 50%; /* Takes up the other half of the screen */
+            height: 100%;
+            background-color: #f4f4f9; /* Background color for the empty space */
+            float: right; /* Floats the content to the right */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .image-container {
+            position: relative; /* Makes the container position relative to its normal position */
+            display: inline-block; /* Ensures the container wraps the image */
+        }
+
+        img {
+            width: 100%; /* Makes the image fill its container */
+            height: auto;
+        }
+
+        .full-page-image {
+            background-image: 'tadashi_hamada.png';
+            background-size: cover; /* Makes the image cover the entire area */
+            background-position: center; /* Centers the image */
+            height: 100%; /* Full height of the page */
+            width: 100%; /* Full width of the page */
+        }
+
+        .assistance_btn {
+            position: absolute; /* Positions the button relative to its container */
+            top: 50%; /* Places the button vertically in the middle of the image */
+            left: 25%; /* Places the button horizontally in the middle of the image */
+            transform: translate(-50%, -50%); /* Adjusts the button so that its center is aligned */
+            padding: 10px 20px; /* Adds padding to the button */
+            background-color: rgba(0, 0, 0, 1); /* Semi-transparent black background */
+            color: rgb(52, 224, 17); /* White text */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 30px;
+            cursor: pointer; /* Changes the cursor to indicate a clickable button */
+        }
+
+        .assistance_btn:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+        }
+
+        /* Baymax-like container */
+        .container {
+            background-color: #ffffff;
+            border-radius: 50%;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #4b4b4b;
+            font-size: 36px;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        p {
+            color: #7f7f7f;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Button style resembling Baymax's buttons */
+        .button {
+            background-color: #009688;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #00796b;
+        }
+
+        .button:focus {
+            outline: none;
+        }
+
+        /* Baymax Image */
+        .tadashi_hamada_image {
+            width: 2000px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!----
+    <div class="image-container">
+        <img src="GERM.JPG" alt="germ_hamada" class="img">
+        <button class="assistance_btn" onclick="window.location.href='https://www.example.com';">Get Started!</button>
+    </div>
+    --->
+    
+    
+    <div class="container">
+        <!---<h1>TADASHI HAMADA</h1>-->
+        <img src="GERM.JPG" alt="germ_hamada" class="img">
+        <p>I'm here to help you! Feel free to click the button below for assistance.</p>
+        
+        <button class="button" onclick="window.location.href='fight_mode.html'">Fight Mode!</button>
+        <button class="button" onclick="window.location.href='emotions.html'">I'm in pain</button>
+        <button class="button" onclick="window.location.href='fist_bump.html'">Fist Bump</button>
+        <button class="button" onclick="window.location.href='time.html'">What time is it?</button>
+        <button class="button" onclick="window.location.href='weather.html'">Weather</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baymax - Emotions</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        /* Container styling for the emotions */
+        .emotion-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h1 {
+            color: #4b4b4b;
+            font-size: 36px;
+        }
+
+        p {
+            color: #4b4b4b;
+            font-size: 12px;
+        }
+
+        img {
+            width: 100%; /* Set a specific width */
+            height: auto;
+        }
+
+        .emotion {
+            font-size: 50px;
+            margin: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column; /* Stack the caption above the image */
+            align-items: center; /* Center caption and image */
+        }
+
+        .emotion:hover {
+            transform: scale(1.2);
+        }
+
+        /* Styling for each emotion */
+        .left_punch {
+            color: #ffeb3b;
+        }
+
+        .right_punch {
+            color: #2196f3;
+        }
+
+        .multi_punch {
+            color: #f44336;
+        }
+
+        .caption {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px; /* Space between caption and image */
+            color: #333;
+        }
+
+        /* Flex container for images to align them side by side */
+        .image-container {
+            display: flex; /* Enables Flexbox layout */
+            justify-content: center; /* Center images horizontally */
+            gap: 20px; /* Adds space between images */
+        }
+
+        /* Button style */
+        .button {
+            background-color: #009688;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .button:hover {
+            background-color: #00796b;
+        }
+
+        .button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container"> <!-- This is the flex container for the images -->
+        <img src="time_baemax.png" alt="germ_hamada" class="img">
+    </div>
+        <!-- Return Button -->
+        <button class="button" onclick="window.location.href='baemax.html'">Back!</button>
+</body>
+</html>

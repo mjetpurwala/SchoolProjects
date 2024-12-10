@@ -1,0 +1,50 @@
+Reference	Value	Datasheet	Footprint	Qty	DNP
+C1	0.1 uF	~	ECE445L:C_Axial_200mil	1	
+C2	1.0 uF	~	ECE445L:C_Axial_200mil	1	
+"C3,C6"	4.7 uF	~	ECE445L:C_Axial_200mil	2	
+"C4,C8,C10,C23,C24"	4.7uF	~	-- mixed values --	5	
+C5	1u	~	ECE445L:C_Axial_200mil	1	
+C7	220pF	~	ECE445L:C_Axial_200mil	1	
+"C11,C13,C16,C17,C18"	0.1uF	~	ECE445L:C_Axial_200mil	5	
+"C12,C19"	0.01uF	~	ECE445L:C_Axial_200mil	2	
+"C14,C22"	1uF	~	ECE445L:C_Axial_200mil	2	
+"C15,C25"	2.2uF	~	-- mixed values --	2	
+"C20,C21"	10pF C0G	~	ECE445L:C_Axial_200mil	2	
+D1	LED	https://users.ece.utexas.edu/~valvano/mspm0/HLMP-4700.pdf	ECE445L:LED_D5.0mm	1	
+"H1,H2,H3,H4"	~		ECE445L:MountingHole_4_40	4	
+IC1	TLV5616	https://www.ti.com/lit/ds/symlink/tlv5616.pdf	ECE445L:DIP-8_W7.62mm_LongPads	1	
+IC2	LM4041CILPR	https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=https://www.ti.com/lit/gpn/lm4041a12	ECE445L:ti_LM4041CILPR	1	
+IC3	LM2937ET-3.3_NOPB	http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm2937	ECE445L:TO254P470X1028X1955-3P	1	
+J1	Conn_01x06_Pin	~	Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical	1	
+J2	Header_4	~	ECE445L:PinHeader_1x04_P2.54mm_Vertical	1	
+J3	Conn_01x03_Pin	~	Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical	1	
+J4	JTAG	~	ECE445L:PinHeader_1x05_P2.54mm_Vertical	1	
+J5	Battery	~	ECE445L:PinHeader_1x02_P2.54mm_Vertical	1	
+J6	ext devices	~	Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical	1	
+J7	ext board	~	Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical	1	
+J8	ext devices 2	~	Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical	1	
+J9	ext board 2	~	Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical	1	
+L2	SRR1280-180M	SRR1280-180M	IND_BOURNS_SRR1280	1	
+LS1	Speaker	~	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	1	
+PS1	IA0305S	https://www.xppower.com/pdfs/SF_IA.pdf	Converter_DCDC:Converter_DCDC_XP_POWER-IAxxxxS_THT	1	
+"R1,R7,R14"	10k	-- mixed values --	ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal	3	
+R2	47 kohm	~	ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal	1	
+"R3,R6"	10 kohm	~	ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal	2	
+R4	2 kohm	~	ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal	1	
+R5	20 kohm	~	ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal	1	
+"R8,R9"	22k	~	ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal	2	
+"R10,R11"	1k	~	ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal	2	
+R12	100k	~	ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal	1	
+R13	1M	https://users.ece.utexas.edu/~valvano/mspm0/CarbonFilmresistors.pdf	ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal	1	
+R15	330	https://users.ece.utexas.edu/~valvano/mspm0/CarbonFilmresistors.pdf	ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal	1	
+SW1	Reset	~	Button_Switch_THT:SW_PUSH_6mm	1	
+SW103	LEFT	~	Button_Switch_THT:SW_PUSH_6mm	1	
+SW104	RIGHT	~	Button_Switch_THT:SW_PUSH_6mm	1	
+U1	MCP34119P	https://users.ece.utexas.edu/~valvano/Datasheets/MC34119.pdf	ECE445L:DIP-8_W7.62mm_LongPads	1	
+U2	OPA2350	http://www.ti.com/lit/ds/symlink/opa2350.pdf	ECE445L:DIP-8_W7.62mm_LongPads	1	
+U3	Adafruit ST7735R	https://www.mouser.com/datasheet/2/737/ST7735R_V0_2-2489618.pdf	ECE445L:adafruit_st7735r2	1	
+U4	ESP8266-1	https://www.microchip.ua/wireless/esp01.pdf	ECE445L:PinHeader_2x04_P2.54mm_Vertical	1	
+U5	TM4C123GH6PMIR	http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftm4c123gh6pm	ECE445L:QFP50P1200X1200X160-64N	1	
+U6	LP2950-33LPRE3	http://www.ti.com/lit/gpn/lp2950	ECE445L:TL431CLPM	1	
+U7	CMA-4544PF-W (elec mic)	CMA-4544PF-W	CMA_CUI_9P7X9P7_CUD	1	
+Y1	ABM3-16.000MHZ-B2-T	https://abracon.com/Resonators/abm3.pdf	ECE445L:ABM3	1	

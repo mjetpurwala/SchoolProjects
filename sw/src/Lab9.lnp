@@ -1,0 +1,24 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+".\startup.o"
+".\lab9.o"
+".\pll.o"
+".\ssd2119.o"
+".\timer0a.o"
+".\tlv5616.o"
+".\sound.o"
+".\timer1a.o"
+".\motor.o"
+".\diskio.o"
+".\ff.o"
+".\sdcfile.o"
+".\st7735.o"
+".\timer2a.o"
+".\sd-lcd.o"
+".\uart.o"
+".\esp8266.o"
+".\mqtt.o"
+".\uart5.o"
+".\timer3a.o"
+--library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Lab9.map" -o .\Lab9.axf

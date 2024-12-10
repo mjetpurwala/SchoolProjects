@@ -1,0 +1,524 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    startup.o(RESET) refers to startup.o(STACK) for StackMem
+    startup.o(RESET) refers to timer0a.o(i.Timer0A_Handler) for Timer0A_Handler
+    startup.o(RESET) refers to timer1a.o(i.Timer1A_Handler) for Timer1A_Handler
+    startup.o(RESET) refers to timer2a.o(i.Timer2A_Handler) for Timer2A_Handler
+    startup.o(RESET) refers to texas.o(i.Timer5A_Handler) for Timer5A_Handler
+    startup.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    lab5.o(i.main) refers to startup.o(.text) for DisableInterrupts
+    lab5.o(i.main) refers to pll.o(i.PLL_Init) for PLL_Init
+    lab5.o(i.main) refers to switch.o(i.Switch_Init) for Switch_Init
+    lab5.o(i.main) refers to transmitter.o(i.Transmitter_Init) for Transmitter_Init
+    lab5.o(i.main) refers to timer0a.o(i.Timer0A_Init) for Timer0A_Init
+    lab5.o(i.main) refers to dsp.o(i.DFT_Init) for DFT_Init
+    lab5.o(i.main) refers to led.o(i.LED_Init) for LED_Init
+    lab5.o(i.main) refers to led_matrix.o(i.LED_Matrix_Init) for LED_Matrix_Init
+    lab5.o(i.main) refers to transmitter.o(i.Music_PlaySong) for Music_PlaySong
+    lab5.o(i.main) refers to led_matrix.o(i.Charliplex) for Charliplex
+    lab5.o(i.main) refers to transmitter.o(.data) for songchoice
+    texas.o(i.TExaS_Init) refers to pll.o(i.PLL_Init) for PLL_Init
+    texas.o(i.TExaS_Init) refers to texas.o(i.UART_Init) for UART_Init
+    texas.o(i.TExaS_Init) refers to texas.o(i.Timer5A_Init) for Timer5A_Init
+    texas.o(i.TExaS_Init) refers to startup.o(.text) for EnableInterrupts
+    texas.o(i.TExaS_Init) refers to texas.o(i.ADC1_InitPD3) for ADC1_InitPD3
+    texas.o(i.TExaS_Init) refers to texas.o(i.ADC1_Init_PD2) for ADC1_Init_PD2
+    texas.o(i.TExaS_Init) refers to texas.o(i.ADC1_Init_PE2) for ADC1_Init_PE2
+    texas.o(i.TExaS_Init) refers to texas.o(i.ADC1_Init_PB5) for ADC1_Init_PB5
+    texas.o(i.TExaS_Init) refers to texas.o(i.LogicAnalyzerA) for LogicAnalyzerA
+    texas.o(i.TExaS_Init) refers to texas.o(i.LogicAnalyzerB) for LogicAnalyzerB
+    texas.o(i.TExaS_Init) refers to texas.o(i.LogicAnalyzerC) for LogicAnalyzerC
+    texas.o(i.TExaS_Init) refers to texas.o(i.LogicAnalyzerE) for LogicAnalyzerE
+    texas.o(i.TExaS_Init) refers to texas.o(i.LogicAnalyzerF) for LogicAnalyzerF
+    texas.o(i.TExaS_Init) refers to texas.o(i.Scope) for Scope
+    texas.o(i.TExaS_Stop) refers to texas.o(i.Timer5A_Stop) for Timer5A_Stop
+    texas.o(i.Timer5A_Handler) refers to texas.o(.data) for PeriodicTask5
+    texas.o(i.Timer5A_Init) refers to startup.o(.text) for StartCritical
+    texas.o(i.Timer5A_Init) refers to texas.o(.data) for PeriodicTask5
+    timer0a.o(i.Timer0A_Handler) refers to timer0a.o(.data) for PeriodicTask0
+    timer0a.o(i.Timer0A_Init) refers to timer0a.o(.data) for PeriodicTask0
+    timer1a.o(i.Timer1A_Handler) refers to timer1a.o(.data) for PeriodicTask1
+    timer1a.o(i.Timer1A_Init) refers to timer1a.o(.data) for PeriodicTask1
+    transmitter.o(i.Music_PlaySong) refers to transmitter.o(i.Transmitter_Init) for Transmitter_Init
+    transmitter.o(i.Music_PlaySong) refers to timer2a.o(i.Timer2A_Init) for Timer2A_Init
+    transmitter.o(i.Music_PlaySong) refers to timer1a.o(i.Timer1A_Init) for Timer1A_Init
+    transmitter.o(i.Music_PlaySong) refers to transmitter.o(.data) for notePtr
+    transmitter.o(i.Music_PlaySong) refers to transmitter.o(i.func2) for func2
+    transmitter.o(i.Music_PlaySong) refers to tlv5616.o(i.func1) for func1
+    transmitter.o(i.Transmitter_Init) refers to tlv5616.o(i.DAC_Init) for DAC_Init
+    transmitter.o(i.Transmitter_Init) refers to transmitter.o(.data) for songchoice
+    transmitter.o(i.Transmitter_Init) refers to transmitter.o(.constdata) for Song
+    transmitter.o(i.func2) refers to transmitter.o(.data) for notePtr
+    receiver.o(i.torecieve) refers to dsp.o(i.DFT) for DFT
+    receiver.o(i.torecieve) refers to dsp.o(i.Mag1) for Mag1
+    receiver.o(i.torecieve) refers to dsp.o(i.Mag2) for Mag2
+    receiver.o(i.torecieve) refers to led.o(i.LED_GreenOn) for LED_GreenOn
+    receiver.o(i.torecieve) refers to led.o(i.LED_BlueOff) for LED_BlueOff
+    receiver.o(i.torecieve) refers to led.o(i.LED_BlueOn) for LED_BlueOn
+    receiver.o(i.torecieve) refers to led.o(i.LED_GreenOff) for LED_GreenOff
+    receiver.o(i.torecieve) refers to receiver.o(.bss) for FIFO
+    receiver.o(i.torecieve) refers to receiver.o(.data) for i
+    st7735.o(i.Output_Clear) refers to st7735.o(i.ST7735_FillScreen) for ST7735_FillScreen
+    st7735.o(i.Output_Color) refers to st7735.o(i.ST7735_SetTextColor) for ST7735_SetTextColor
+    st7735.o(i.Output_Init) refers to st7735.o(i.ST7735_InitR) for ST7735_InitR
+    st7735.o(i.Output_Init) refers to st7735.o(i.ST7735_FillScreen) for ST7735_FillScreen
+    st7735.o(i.Output_Off) refers to st7735.o(i.Output_Clear) for Output_Clear
+    st7735.o(i.Output_On) refers to st7735.o(i.Output_Init) for Output_Init
+    st7735.o(i.ST7735_DrawBitmap) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawBitmap) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_DrawBitmap) refers to st7735.o(i.deselect) for deselect
+    st7735.o(i.ST7735_DrawBitmap) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawChar) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawChar) refers to st7735.o(i.pushColor) for pushColor
+    st7735.o(i.ST7735_DrawChar) refers to st7735.o(i.deselect) for deselect
+    st7735.o(i.ST7735_DrawChar) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawChar) refers to st7735.o(.constdata) for Font
+    st7735.o(i.ST7735_DrawCharS) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.ST7735_DrawCharS) refers to st7735.o(i.ST7735_FillRect) for ST7735_FillRect
+    st7735.o(i.ST7735_DrawCharS) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawCharS) refers to st7735.o(.constdata) for Font
+    st7735.o(i.ST7735_DrawCircle) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawCircle) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_DrawCircle) refers to st7735.o(i.deselect) for deselect
+    st7735.o(i.ST7735_DrawCircle) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawCircle) refers to st7735.o(.constdata) for circle
+    st7735.o(i.ST7735_DrawFastHLine) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawFastHLine) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_DrawFastHLine) refers to st7735.o(i.deselect) for deselect
+    st7735.o(i.ST7735_DrawFastHLine) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawFastVLine) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawFastVLine) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_DrawFastVLine) refers to st7735.o(i.deselect) for deselect
+    st7735.o(i.ST7735_DrawFastVLine) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawLine) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.ST7735_DrawPixel) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawPixel) refers to st7735.o(i.pushColor) for pushColor
+    st7735.o(i.ST7735_DrawPixel) refers to st7735.o(i.deselect) for deselect
+    st7735.o(i.ST7735_DrawPixel) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawSmallCircle) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawSmallCircle) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_DrawSmallCircle) refers to st7735.o(i.deselect) for deselect
+    st7735.o(i.ST7735_DrawSmallCircle) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawSmallCircle) refers to st7735.o(.constdata) for smallCircle
+    st7735.o(i.ST7735_DrawString) refers to st7735.o(i.ST7735_DrawCharS) for ST7735_DrawCharS
+    st7735.o(i.ST7735_FillRect) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_FillRect) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_FillRect) refers to st7735.o(i.deselect) for deselect
+    st7735.o(i.ST7735_FillRect) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_FillScreen) refers to st7735.o(i.ST7735_FillRect) for ST7735_FillRect
+    st7735.o(i.ST7735_FillScreen) refers to st7735.o(.data) for _height
+    st7735.o(i.ST7735_InitB) refers to st7735.o(i.commonInit) for commonInit
+    st7735.o(i.ST7735_InitB) refers to st7735.o(i.ST7735_SetCursor) for ST7735_SetCursor
+    st7735.o(i.ST7735_InitB) refers to st7735.o(i.ST7735_FillScreen) for ST7735_FillScreen
+    st7735.o(i.ST7735_InitB) refers to st7735.o(.constdata) for Bcmd
+    st7735.o(i.ST7735_InitB) refers to st7735.o(.data) for StTextColor
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.commonInit) for commonInit
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.commandList) for commandList
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.writecommand) for writecommand
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.ST7735_SetCursor) for ST7735_SetCursor
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.ST7735_FillScreen) for ST7735_FillScreen
+    st7735.o(i.ST7735_InitR) refers to st7735.o(.constdata) for Rcmd1
+    st7735.o(i.ST7735_InitR) refers to st7735.o(.data) for ColStart
+    st7735.o(i.ST7735_InvertDisplay) refers to st7735.o(i.writecommand) for writecommand
+    st7735.o(i.ST7735_InvertDisplay) refers to st7735.o(i.deselect) for deselect
+    st7735.o(i.ST7735_Line) refers to st7735.o(i.plotLineX) for plotLineX
+    st7735.o(i.ST7735_Line) refers to st7735.o(i.plotLineY) for plotLineY
+    st7735.o(i.ST7735_OutChar) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    st7735.o(i.ST7735_OutChar) refers to st7735.o(i.ST7735_DrawCharS) for ST7735_DrawCharS
+    st7735.o(i.ST7735_OutChar) refers to st7735.o(.data) for StY
+    st7735.o(i.ST7735_OutString) refers to st7735.o(i.ST7735_OutChar) for ST7735_OutChar
+    st7735.o(i.ST7735_OutUDec) refers to st7735.o(i.fillmessage) for fillmessage
+    st7735.o(i.ST7735_OutUDec) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    st7735.o(i.ST7735_OutUDec) refers to st7735.o(i.ST7735_DrawCharS) for ST7735_DrawCharS
+    st7735.o(i.ST7735_OutUDec) refers to st7735.o(.data) for Messageindex
+    st7735.o(i.ST7735_OutUDec) refers to st7735.o(.bss) for Message
+    st7735.o(i.ST7735_OutUDec4) refers to st7735.o(i.fillmessage4) for fillmessage4
+    st7735.o(i.ST7735_OutUDec4) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    st7735.o(i.ST7735_OutUDec4) refers to st7735.o(i.ST7735_DrawCharS) for ST7735_DrawCharS
+    st7735.o(i.ST7735_OutUDec4) refers to st7735.o(.data) for Messageindex
+    st7735.o(i.ST7735_OutUDec4) refers to st7735.o(.bss) for Message
+    st7735.o(i.ST7735_OutUDec5) refers to st7735.o(i.fillmessage5) for fillmessage5
+    st7735.o(i.ST7735_OutUDec5) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    st7735.o(i.ST7735_OutUDec5) refers to st7735.o(i.ST7735_DrawCharS) for ST7735_DrawCharS
+    st7735.o(i.ST7735_OutUDec5) refers to st7735.o(.data) for Messageindex
+    st7735.o(i.ST7735_OutUDec5) refers to st7735.o(.bss) for Message
+    st7735.o(i.ST7735_PlotBar) refers to st7735.o(i.ST7735_DrawFastVLine) for ST7735_DrawFastVLine
+    st7735.o(i.ST7735_PlotBar) refers to st7735.o(.data) for Ymin
+    st7735.o(i.ST7735_PlotClear) refers to st7735.o(i.ST7735_Color565) for ST7735_Color565
+    st7735.o(i.ST7735_PlotClear) refers to st7735.o(i.ST7735_FillRect) for ST7735_FillRect
+    st7735.o(i.ST7735_PlotClear) refers to st7735.o(.data) for Ymax
+    st7735.o(i.ST7735_PlotLine) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.ST7735_PlotLine) refers to st7735.o(.data) for Ymin
+    st7735.o(i.ST7735_PlotNext) refers to st7735.o(.data) for X
+    st7735.o(i.ST7735_PlotNextErase) refers to st7735.o(i.ST7735_Color565) for ST7735_Color565
+    st7735.o(i.ST7735_PlotNextErase) refers to st7735.o(i.ST7735_DrawFastVLine) for ST7735_DrawFastVLine
+    st7735.o(i.ST7735_PlotNextErase) refers to st7735.o(.data) for X
+    st7735.o(i.ST7735_PlotPoint) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.ST7735_PlotPoint) refers to st7735.o(.data) for Ymin
+    st7735.o(i.ST7735_PlotPoints) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.ST7735_PlotPoints) refers to st7735.o(.data) for Ymin
+    st7735.o(i.ST7735_PlotdBfs) refers to st7735.o(i.ST7735_DrawFastVLine) for ST7735_DrawFastVLine
+    st7735.o(i.ST7735_PlotdBfs) refers to st7735.o(.constdata) for dBfs
+    st7735.o(i.ST7735_PlotdBfs) refers to st7735.o(.data) for X
+    st7735.o(i.ST7735_SetCursor) refers to st7735.o(.data) for StX
+    st7735.o(i.ST7735_SetRotation) refers to st7735.o(i.writecommand) for writecommand
+    st7735.o(i.ST7735_SetRotation) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_SetRotation) refers to st7735.o(i.deselect) for deselect
+    st7735.o(i.ST7735_SetRotation) refers to st7735.o(.data) for Rotation
+    st7735.o(i.ST7735_SetTextColor) refers to st7735.o(.data) for StTextColor
+    st7735.o(i.ST7735_SetX) refers to st7735.o(.data) for X
+    st7735.o(i.commandList) refers to st7735.o(i.writecommand) for writecommand
+    st7735.o(i.commandList) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.commandList) refers to st7735.o(i.Delay1ms) for Delay1ms
+    st7735.o(i.commonInit) refers to st7735.o(i.Delay1ms) for Delay1ms
+    st7735.o(i.commonInit) refers to st7735.o(i.commandList) for commandList
+    st7735.o(i.commonInit) refers to st7735.o(.data) for RowStart
+    st7735.o(i.fillmessage) refers to st7735.o(.bss) for Message
+    st7735.o(i.fillmessage) refers to st7735.o(.data) for Messageindex
+    st7735.o(i.fillmessage4) refers to st7735.o(i.fillmessage) for fillmessage
+    st7735.o(i.fillmessage4) refers to st7735.o(.data) for Messageindex
+    st7735.o(i.fillmessage4) refers to st7735.o(.bss) for Message
+    st7735.o(i.fillmessage5) refers to st7735.o(i.fillmessage) for fillmessage
+    st7735.o(i.fillmessage5) refers to st7735.o(.data) for Messageindex
+    st7735.o(i.fillmessage5) refers to st7735.o(.bss) for Message
+    st7735.o(i.fputc) refers to st7735.o(i.ST7735_OutChar) for ST7735_OutChar
+    st7735.o(i.plotLineX) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.plotLineY) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.pushColor) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.setAddrWindow) refers to st7735.o(i.writecommand) for writecommand
+    st7735.o(i.setAddrWindow) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.setAddrWindow) refers to st7735.o(.data) for ColStart
+    dsp.o(i.DFT) refers to dsp.o(.constdata) for ReW
+    dsp.o(i.DFT) refers to dsp.o(.data) for rsum1
+    dsp.o(i.DFT_Init) refers to dsp.o(.data) for isum1
+    dsp.o(i.Mag1) refers to dsp.o(.data) for rsum1
+    dsp.o(i.Mag2) refers to dsp.o(.data) for rsum2
+    dsp.o(i.Median) refers to dsp.o(.data) for x1
+    dsp.o(i.NoiseReject) refers to dsp.o(.data) for t1
+    dsp.o(i.NoiseReject_Init) refers to dsp.o(.data) for t2
+    dsp.o(i.aMag1) refers to dsp.o(.data) for isum1
+    dsp.o(i.aMag1) refers to dsp.o(.bss) for x
+    dsp.o(i.aMag1) refers to dsp.o(.constdata) for ReW
+    dsp.o(i.aMag2) refers to dsp.o(.data) for isum2
+    dsp.o(i.aMag2) refers to dsp.o(.bss) for x
+    dsp.o(i.aMag2) refers to dsp.o(.constdata) for ReW
+    tlv5616.o(i.func1) refers to tlv5616.o(i.DAC_Out) for DAC_Out
+    tlv5616.o(i.func1) refers to tlv5616.o(.data) for SineWave
+    timer2a.o(i.Timer2A_Handler) refers to timer2a.o(.data) for PeriodicTask2
+    timer2a.o(i.Timer2A_Init) refers to timer2a.o(.data) for PeriodicTask2
+    beat_detect.o(i.detect_tempo) refers to beat_detect.o(i.calculate_energy) for calculate_energy
+    beat_detect.o(i.detect_tempo) refers to dfltui.o(.text) for __aeabi_ui2d
+    beat_detect.o(i.detect_tempo) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    beat_detect.o(i.detect_tempo) refers to ddiv.o(.text) for __aeabi_ddiv
+    beat_detect.o(i.detect_tempo) refers to dfixui.o(.text) for __aeabi_d2uiz
+    led_matrix.o(i.Charliplex) refers to led_matrix.o(i.LED_Matrix_Off_All) for LED_Matrix_Off_All
+    led_matrix.o(i.Charliplex) refers to led_matrix.o(i.LED_Matrix_On) for LED_Matrix_On
+    led_matrix.o(i.Charliplex) refers to led_matrix.o(.data) for cur_image
+    led_matrix.o(i.Clock_Delay1ms) refers to led_matrix.o(i.Clock_Delay) for Clock_Delay
+    led_matrix.o(i.switch_image) refers to led_matrix.o(.data) for cur_image
+    button.o(i.Graphics_drawButton) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    button.o(i.Graphics_drawButton) refers to rectangle.o(i.Graphics_fillRectangle) for Graphics_fillRectangle
+    button.o(i.Graphics_drawButton) refers to context.o(i.Graphics_setFont) for Graphics_setFont
+    button.o(i.Graphics_drawButton) refers to string.o(i.Graphics_drawString) for Graphics_drawString
+    button.o(i.Graphics_drawReleasedButton) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    button.o(i.Graphics_drawReleasedButton) refers to rectangle.o(i.Graphics_fillRectangle) for Graphics_fillRectangle
+    button.o(i.Graphics_drawReleasedButton) refers to context.o(i.Graphics_setFont) for Graphics_setFont
+    button.o(i.Graphics_drawReleasedButton) refers to string.o(i.Graphics_drawString) for Graphics_drawString
+    button.o(i.Graphics_drawSelectedButton) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    button.o(i.Graphics_drawSelectedButton) refers to rectangle.o(i.Graphics_fillRectangle) for Graphics_fillRectangle
+    button.o(i.Graphics_drawSelectedButton) refers to context.o(i.Graphics_setFont) for Graphics_setFont
+    button.o(i.Graphics_drawSelectedButton) refers to string.o(i.Graphics_drawString) for Graphics_drawString
+    checkbox.o(i.Graphics_drawCheckBox) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    checkbox.o(i.Graphics_drawCheckBox) refers to rectangle.o(i.Graphics_fillRectangle) for Graphics_fillRectangle
+    checkbox.o(i.Graphics_drawCheckBox) refers to rectangle.o(i.Graphics_drawRectangle) for Graphics_drawRectangle
+    checkbox.o(i.Graphics_drawCheckBox) refers to line.o(i.Graphics_drawLine) for Graphics_drawLine
+    checkbox.o(i.Graphics_drawCheckBox) refers to context.o(i.Graphics_setFont) for Graphics_setFont
+    checkbox.o(i.Graphics_drawCheckBox) refers to string.o(i.Graphics_drawString) for Graphics_drawString
+    checkbox.o(i.Graphics_drawReleasedCheckBox) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    checkbox.o(i.Graphics_drawReleasedCheckBox) refers to rectangle.o(i.Graphics_fillRectangle) for Graphics_fillRectangle
+    checkbox.o(i.Graphics_drawReleasedCheckBox) refers to rectangle.o(i.Graphics_drawRectangle) for Graphics_drawRectangle
+    checkbox.o(i.Graphics_drawSelectedCheckBox) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    checkbox.o(i.Graphics_drawSelectedCheckBox) refers to line.o(i.Graphics_drawLine) for Graphics_drawLine
+    circle.o(i.Graphics_drawCircle) refers to context.o(i.Graphics_drawPixel) for Graphics_drawPixel
+    circle.o(i.Graphics_fillCircle) refers to line.o(i.Graphics_drawLineH) for Graphics_drawLineH
+    context.o(i.Graphics_clearDisplay) refers to display.o(i.Graphics_clearDisplayOnDisplay) for Graphics_clearDisplayOnDisplay
+    context.o(i.Graphics_drawPixel) refers to display.o(i.Graphics_drawPixelOnDisplay) for Graphics_drawPixelOnDisplay
+    context.o(i.Graphics_flushBuffer) refers to display.o(i.Graphics_flushOnDisplay) for Graphics_flushOnDisplay
+    context.o(i.Graphics_setBackgroundColor) refers to display.o(i.Graphics_translateColorOnDisplay) for Graphics_translateColorOnDisplay
+    context.o(i.Graphics_setClipRegion) refers to context.o(i.Graphics_getWidthOfDisplay) for Graphics_getWidthOfDisplay
+    context.o(i.Graphics_setClipRegion) refers to context.o(i.Graphics_getHeightOfDisplay) for Graphics_getHeightOfDisplay
+    context.o(i.Graphics_setForegroundColor) refers to display.o(i.Graphics_translateColorOnDisplay) for Graphics_translateColorOnDisplay
+    image.o(i.Graphics_convertPalette) refers to display.o(i.Graphics_translateColorOnDisplay) for Graphics_translateColorOnDisplay
+    image.o(i.Graphics_convertPalette) refers to image.o(.bss) for g_pulConvertedPalette
+    image.o(i.Graphics_drawImage) refers to image.o(i.Graphics_convertPalette) for Graphics_convertPalette
+    image.o(i.Graphics_drawImage) refers to display.o(i.Graphics_drawMultiplePixelsOnDisplay) for Graphics_drawMultiplePixelsOnDisplay
+    image.o(i.Graphics_drawImage) refers to display.o(i.Graphics_drawPixelOnDisplay) for Graphics_drawPixelOnDisplay
+    imagebutton.o(i.Graphics_drawImageButton) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    imagebutton.o(i.Graphics_drawImageButton) refers to rectangle.o(i.Graphics_fillRectangle) for Graphics_fillRectangle
+    imagebutton.o(i.Graphics_drawImageButton) refers to image.o(i.Graphics_drawImage) for Graphics_drawImage
+    imagebutton.o(i.Graphics_drawImageButton) refers to context.o(i.Graphics_setFont) for Graphics_setFont
+    imagebutton.o(i.Graphics_drawReleasedImageButton) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    imagebutton.o(i.Graphics_drawReleasedImageButton) refers to rectangle.o(i.Graphics_fillRectangle) for Graphics_fillRectangle
+    imagebutton.o(i.Graphics_drawReleasedImageButton) refers to image.o(i.Graphics_drawImage) for Graphics_drawImage
+    imagebutton.o(i.Graphics_drawReleasedImageButton) refers to context.o(i.Graphics_setFont) for Graphics_setFont
+    imagebutton.o(i.Graphics_drawSelectedImageButton) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    imagebutton.o(i.Graphics_drawSelectedImageButton) refers to rectangle.o(i.Graphics_fillRectangle) for Graphics_fillRectangle
+    imagebutton.o(i.Graphics_drawSelectedImageButton) refers to image.o(i.Graphics_drawImage) for Graphics_drawImage
+    imagebutton.o(i.Graphics_drawSelectedImageButton) refers to context.o(i.Graphics_setFont) for Graphics_setFont
+    line.o(i.Graphics_clipLine) refers to line.o(i.Graphics_getClipCode) for Graphics_getClipCode
+    line.o(i.Graphics_drawLine) refers to line.o(i.Graphics_drawLineV) for Graphics_drawLineV
+    line.o(i.Graphics_drawLine) refers to line.o(i.Graphics_drawLineH) for Graphics_drawLineH
+    line.o(i.Graphics_drawLine) refers to line.o(i.Graphics_clipLine) for Graphics_clipLine
+    line.o(i.Graphics_drawLine) refers to display.o(i.Graphics_drawPixelOnDisplay) for Graphics_drawPixelOnDisplay
+    line.o(i.Graphics_drawLineH) refers to display.o(i.Graphics_drawHorizontalLineOnDisplay) for Graphics_drawHorizontalLineOnDisplay
+    line.o(i.Graphics_drawLineV) refers to display.o(i.Graphics_drawVerticalLineOnDisplay) for Graphics_drawVerticalLineOnDisplay
+    radiobutton.o(i.Graphics_drawRadioButton) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    radiobutton.o(i.Graphics_drawRadioButton) refers to circle.o(i.Graphics_drawCircle) for Graphics_drawCircle
+    radiobutton.o(i.Graphics_drawRadioButton) refers to circle.o(i.Graphics_fillCircle) for Graphics_fillCircle
+    radiobutton.o(i.Graphics_drawRadioButton) refers to context.o(i.Graphics_setFont) for Graphics_setFont
+    radiobutton.o(i.Graphics_drawRadioButton) refers to string.o(i.Graphics_drawString) for Graphics_drawString
+    radiobutton.o(i.Graphics_drawReleasedRadioButton) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    radiobutton.o(i.Graphics_drawReleasedRadioButton) refers to circle.o(i.Graphics_fillCircle) for Graphics_fillCircle
+    radiobutton.o(i.Graphics_drawSelectedRadioButton) refers to context.o(i.Graphics_setForegroundColor) for Graphics_setForegroundColor
+    radiobutton.o(i.Graphics_drawSelectedRadioButton) refers to circle.o(i.Graphics_fillCircle) for Graphics_fillCircle
+    radiobutton.o(i.Graphics_drawSelectedRadioButton) refers to context.o(i.Graphics_setFont) for Graphics_setFont
+    rectangle.o(i.Graphics_drawRectangle) refers to line.o(i.Graphics_drawLineH) for Graphics_drawLineH
+    rectangle.o(i.Graphics_drawRectangle) refers to line.o(i.Graphics_drawLineV) for Graphics_drawLineV
+    rectangle.o(i.Graphics_fillRectangle) refers to display.o(i.Graphics_fillRectangleOnDisplay) for Graphics_fillRectangleOnDisplay
+    rectangle.o(i.Graphics_getRectangleIntersection) refers to rectangle.o(i.Graphics_isRectangleOverlap) for Graphics_isRectangleOverlap
+    string.o(i.Graphics_drawString) refers to memcpya.o(.text) for __aeabi_memcpy4
+    string.o(i.Graphics_drawString) refers to string.o(i.Graphics_getNumberOfLeadingZeros) for Graphics_getNumberOfLeadingZeros
+    string.o(i.Graphics_drawString) refers to line.o(i.Graphics_drawLineH) for Graphics_drawLineH
+    string.o(i.Graphics_drawString) refers to display.o(i.Graphics_drawPixelOnDisplay) for Graphics_drawPixelOnDisplay
+    string.o(i.Graphics_drawStringCentered) refers to string.o(i.Graphics_getStringWidth) for Graphics_getStringWidth
+    string.o(i.Graphics_drawStringCentered) refers to string.o(i.Graphics_drawString) for Graphics_drawString
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to lab5.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to lab5.o(i.main) for main
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup.o(HEAP), (0 bytes).
+    Removing texas.o(i.ADC1_InitPD3), (200 bytes).
+    Removing texas.o(i.ADC1_Init_PB5), (200 bytes).
+    Removing texas.o(i.ADC1_Init_PD2), (200 bytes).
+    Removing texas.o(i.ADC1_Init_PE2), (200 bytes).
+    Removing texas.o(i.LogicAnalyzerA), (24 bytes).
+    Removing texas.o(i.LogicAnalyzerB), (24 bytes).
+    Removing texas.o(i.LogicAnalyzerC), (24 bytes).
+    Removing texas.o(i.LogicAnalyzerE), (24 bytes).
+    Removing texas.o(i.LogicAnalyzerF), (24 bytes).
+    Removing texas.o(i.Scope), (20 bytes).
+    Removing texas.o(i.TExaS_Init), (312 bytes).
+    Removing texas.o(i.TExaS_Stop), (8 bytes).
+    Removing texas.o(i.Timer5A_Init), (184 bytes).
+    Removing texas.o(i.Timer5A_Stop), (36 bytes).
+    Removing texas.o(i.UART_Init), (156 bytes).
+    Removing timer0a.o(i.Timer0A_Stop), (24 bytes).
+    Removing timer1a.o(i.Timer1A_Stop), (24 bytes).
+    Removing transmitter.o(i.Music_Reset), (28 bytes).
+    Removing receiver.o(i.torecieve), (140 bytes).
+    Removing receiver.o(.bss), (64 bytes).
+    Removing receiver.o(.data), (12 bytes).
+    Removing st7735.o(i.Delay1ms), (32 bytes).
+    Removing st7735.o(i.Output_Clear), (10 bytes).
+    Removing st7735.o(i.Output_Color), (12 bytes).
+    Removing st7735.o(i.Output_Init), (16 bytes).
+    Removing st7735.o(i.Output_Off), (8 bytes).
+    Removing st7735.o(i.Output_On), (8 bytes).
+    Removing st7735.o(i.ST7735_Color565), (24 bytes).
+    Removing st7735.o(i.ST7735_DrawBitmap), (292 bytes).
+    Removing st7735.o(i.ST7735_DrawChar), (276 bytes).
+    Removing st7735.o(i.ST7735_DrawCharS), (248 bytes).
+    Removing st7735.o(i.ST7735_DrawCircle), (172 bytes).
+    Removing st7735.o(i.ST7735_DrawFastHLine), (128 bytes).
+    Removing st7735.o(i.ST7735_DrawFastVLine), (128 bytes).
+    Removing st7735.o(i.ST7735_DrawLine), (246 bytes).
+    Removing st7735.o(i.ST7735_DrawPixel), (76 bytes).
+    Removing st7735.o(i.ST7735_DrawSmallCircle), (172 bytes).
+    Removing st7735.o(i.ST7735_DrawString), (86 bytes).
+    Removing st7735.o(i.ST7735_FillRect), (176 bytes).
+    Removing st7735.o(i.ST7735_FillScreen), (36 bytes).
+    Removing st7735.o(i.ST7735_InitB), (40 bytes).
+    Removing st7735.o(i.ST7735_InitR), (124 bytes).
+    Removing st7735.o(i.ST7735_InvertDisplay), (26 bytes).
+    Removing st7735.o(i.ST7735_Line), (126 bytes).
+    Removing st7735.o(i.ST7735_OutChar), (212 bytes).
+    Removing st7735.o(i.ST7735_OutString), (24 bytes).
+    Removing st7735.o(i.ST7735_OutUDec), (140 bytes).
+    Removing st7735.o(i.ST7735_OutUDec4), (140 bytes).
+    Removing st7735.o(i.ST7735_OutUDec5), (140 bytes).
+    Removing st7735.o(i.ST7735_PlotBar), (88 bytes).
+    Removing st7735.o(i.ST7735_PlotClear), (92 bytes).
+    Removing st7735.o(i.ST7735_PlotLine), (264 bytes).
+    Removing st7735.o(i.ST7735_PlotNext), (32 bytes).
+    Removing st7735.o(i.ST7735_PlotNextErase), (64 bytes).
+    Removing st7735.o(i.ST7735_PlotPoint), (152 bytes).
+    Removing st7735.o(i.ST7735_PlotPoints), (172 bytes).
+    Removing st7735.o(i.ST7735_PlotdBfs), (60 bytes).
+    Removing st7735.o(i.ST7735_SetCursor), (32 bytes).
+    Removing st7735.o(i.ST7735_SetRotation), (216 bytes).
+    Removing st7735.o(i.ST7735_SetTextColor), (12 bytes).
+    Removing st7735.o(i.ST7735_SetX), (36 bytes).
+    Removing st7735.o(i.ST7735_SwapColor), (18 bytes).
+    Removing st7735.o(i.ST7735_XYplot), (2 bytes).
+    Removing st7735.o(i.ST7735_XYplotInit), (6 bytes).
+    Removing st7735.o(i.ST7735_sDecOut2), (2 bytes).
+    Removing st7735.o(i.ST7735_uBinOut6), (2 bytes).
+    Removing st7735.o(i.commandList), (86 bytes).
+    Removing st7735.o(i.commonInit), (392 bytes).
+    Removing st7735.o(i.deselect), (28 bytes).
+    Removing st7735.o(i.ferror), (8 bytes).
+    Removing st7735.o(i.fgetc), (6 bytes).
+    Removing st7735.o(i.fillmessage), (72 bytes).
+    Removing st7735.o(i.fillmessage4), (100 bytes).
+    Removing st7735.o(i.fillmessage5), (128 bytes).
+    Removing st7735.o(i.fputc), (16 bytes).
+    Removing st7735.o(i.plotLineX), (166 bytes).
+    Removing st7735.o(i.plotLineY), (164 bytes).
+    Removing st7735.o(i.pushColor), (18 bytes).
+    Removing st7735.o(i.setAddrWindow), (116 bytes).
+    Removing st7735.o(i.writecommand), (56 bytes).
+    Removing st7735.o(i.writedata), (36 bytes).
+    Removing st7735.o(.bss), (12 bytes).
+    Removing st7735.o(.constdata), (2114 bytes).
+    Removing st7735.o(.data), (44 bytes).
+    Removing dsp.o(i.DFT), (104 bytes).
+    Removing dsp.o(i.Mag1), (72 bytes).
+    Removing dsp.o(i.Mag2), (72 bytes).
+    Removing dsp.o(i.Median), (164 bytes).
+    Removing dsp.o(i.Median3), (46 bytes).
+    Removing dsp.o(i.NoiseReject), (132 bytes).
+    Removing dsp.o(i.NoiseReject_Init), (28 bytes).
+    Removing dsp.o(i.aMag1), (140 bytes).
+    Removing dsp.o(i.aMag2), (144 bytes).
+    Removing dsp.o(.bss), (64 bytes).
+    Removing dsp.o(.constdata), (256 bytes).
+    Removing tlv5616.o(i.DAC_Out_NB), (24 bytes).
+    Removing tlv5616.o(.constdata), (64 bytes).
+    Removing cr4_fft_256_stm32.o(.text), (1502 bytes).
+    Removing cr4_fft_64_stm32.o(.text), (718 bytes).
+    Removing cr4_fft_1024_stm32.o(.text), (4576 bytes).
+    Removing led.o(i.Board_Input), (24 bytes).
+    Removing led.o(i.LED_BlueOff), (12 bytes).
+    Removing led.o(i.LED_BlueOn), (12 bytes).
+    Removing led.o(i.LED_BlueToggle), (20 bytes).
+    Removing led.o(i.LED_GreenOff), (12 bytes).
+    Removing led.o(i.LED_GreenOn), (12 bytes).
+    Removing led.o(i.LED_GreenToggle), (20 bytes).
+    Removing led.o(i.LED_RedOff), (12 bytes).
+    Removing led.o(i.LED_RedOn), (12 bytes).
+    Removing led.o(i.LED_RedToggle), (20 bytes).
+    Removing timer2a.o(i.Timer2A_Stop), (24 bytes).
+    Removing beat_detect.o(i.calculate_energy), (34 bytes).
+    Removing beat_detect.o(i.detect_tempo), (208 bytes).
+    Removing led_matrix.o(i.Clock_Delay), (10 bytes).
+    Removing led_matrix.o(i.Clock_Delay1ms), (22 bytes).
+    Removing led_matrix.o(i.LED_Matrix_Off), (28 bytes).
+    Removing led_matrix.o(i.switch_image), (20 bytes).
+    Removing button.o(i.Graphics_drawButton), (216 bytes).
+    Removing button.o(i.Graphics_drawReleasedButton), (140 bytes).
+    Removing button.o(i.Graphics_drawSelectedButton), (140 bytes).
+    Removing button.o(i.Graphics_isButtonSelected), (34 bytes).
+    Removing checkbox.o(i.Graphics_drawCheckBox), (212 bytes).
+    Removing checkbox.o(i.Graphics_drawReleasedCheckBox), (100 bytes).
+    Removing checkbox.o(i.Graphics_drawSelectedCheckBox), (76 bytes).
+    Removing checkbox.o(i.Graphics_isCheckBoxSelected), (68 bytes).
+    Removing circle.o(i.Graphics_drawCircle), (406 bytes).
+    Removing circle.o(i.Graphics_fillCircle), (358 bytes).
+    Removing context.o(i.Graphics_clearDisplay), (16 bytes).
+    Removing context.o(i.Graphics_drawPixel), (56 bytes).
+    Removing context.o(i.Graphics_flushBuffer), (12 bytes).
+    Removing context.o(i.Graphics_getDisplayHeight), (8 bytes).
+    Removing context.o(i.Graphics_getDisplayWidth), (8 bytes).
+    Removing context.o(i.Graphics_getFontBaseline), (6 bytes).
+    Removing context.o(i.Graphics_getFontHeight), (6 bytes).
+    Removing context.o(i.Graphics_getFontMaxWidth), (6 bytes).
+    Removing context.o(i.Graphics_getHeightOfDisplay), (6 bytes).
+    Removing context.o(i.Graphics_getWidthOfDisplay), (6 bytes).
+    Removing context.o(i.Graphics_initContext), (40 bytes).
+    Removing context.o(i.Graphics_setBackgroundColor), (20 bytes).
+    Removing context.o(i.Graphics_setBackgroundColorTranslated), (6 bytes).
+    Removing context.o(i.Graphics_setClipRegion), (152 bytes).
+    Removing context.o(i.Graphics_setFont), (8 bytes).
+    Removing context.o(i.Graphics_setForegroundColor), (18 bytes).
+    Removing context.o(i.Graphics_setForegroundColorTranslated), (4 bytes).
+    Removing display.o(i.Graphics_clearDisplayOnDisplay), (16 bytes).
+    Removing display.o(i.Graphics_drawHorizontalLineOnDisplay), (40 bytes).
+    Removing display.o(i.Graphics_drawMultiplePixelsOnDisplay), (54 bytes).
+    Removing display.o(i.Graphics_drawPixelOnDisplay), (30 bytes).
+    Removing display.o(i.Graphics_drawVerticalLineOnDisplay), (38 bytes).
+    Removing display.o(i.Graphics_fillRectangleOnDisplay), (20 bytes).
+    Removing display.o(i.Graphics_flushOnDisplay), (12 bytes).
+    Removing display.o(i.Graphics_translateColorOnDisplay), (16 bytes).
+    Removing image.o(i.Graphics_convertPalette), (68 bytes).
+    Removing image.o(i.Graphics_drawImage), (550 bytes).
+    Removing image.o(i.Graphics_getImageColors), (6 bytes).
+    Removing image.o(i.Graphics_getImageHeight), (6 bytes).
+    Removing image.o(i.Graphics_getImageWidth), (6 bytes).
+    Removing image.o(i.Graphics_getOffScreen8BPPSize), (12 bytes).
+    Removing image.o(i.Graphics_getOffscreen1BppImageSize), (18 bytes).
+    Removing image.o(i.Graphics_getOffscreen4BppImageSize), (16 bytes).
+    Removing image.o(.bss), (1024 bytes).
+    Removing imagebutton.o(i.Graphics_drawImageButton), (148 bytes).
+    Removing imagebutton.o(i.Graphics_drawReleasedImageButton), (132 bytes).
+    Removing imagebutton.o(i.Graphics_drawSelectedImageButton), (132 bytes).
+    Removing imagebutton.o(i.Graphics_isImageButtonSelected), (52 bytes).
+    Removing line.o(i.Graphics_clipLine), (312 bytes).
+    Removing line.o(i.Graphics_drawLine), (326 bytes).
+    Removing line.o(i.Graphics_drawLineH), (104 bytes).
+    Removing line.o(i.Graphics_drawLineV), (106 bytes).
+    Removing line.o(i.Graphics_getClipCode), (56 bytes).
+    Removing radiobutton.o(i.Graphics_drawRadioButton), (156 bytes).
+    Removing radiobutton.o(i.Graphics_drawReleasedRadioButton), (64 bytes).
+    Removing radiobutton.o(i.Graphics_drawSelectedRadioButton), (76 bytes).
+    Removing radiobutton.o(i.Graphics_isRadioButtonSelected), (70 bytes).
+    Removing rectangle.o(i.Graphics_drawRectangle), (134 bytes).
+    Removing rectangle.o(i.Graphics_fillRectangle), (220 bytes).
+    Removing rectangle.o(i.Graphics_getRectangleIntersection), (174 bytes).
+    Removing rectangle.o(i.Graphics_isPointWithinRectangle), (42 bytes).
+    Removing rectangle.o(i.Graphics_isRectangleOverlap), (58 bytes).
+    Removing string.o(i.Graphics_drawString), (898 bytes).
+    Removing string.o(i.Graphics_drawStringCentered), (72 bytes).
+    Removing string.o(i.Graphics_getNumberOfLeadingZeros), (36 bytes).
+    Removing string.o(i.Graphics_getStringBaseline), (8 bytes).
+    Removing string.o(i.Graphics_getStringHeight), (8 bytes).
+    Removing string.o(i.Graphics_getStringMaxWidth), (8 bytes).
+    Removing string.o(i.Graphics_getStringWidth), (134 bytes).
+    Removing ddiv.o(.text), (222 bytes).
+    Removing dfltui.o(.text), (26 bytes).
+    Removing dfixui.o(.text), (50 bytes).
+    Removing cdrcmple.o(.text), (48 bytes).
+    Removing depilogue.o(.text), (186 bytes).
+
+192 unused section(s) (total 26584 bytes) removed from the image.

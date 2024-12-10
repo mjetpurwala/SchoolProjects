@@ -1,0 +1,144 @@
+Dependencies for Project 'Baymax', Target 'Lab9': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\startup.s)(0x67367D45)(--cpu Cortex-M4 --fpu=SoftVFP --pd "__EVAL SETA 1" -g --pd "__MICROLIB SETA 1"-I.\RTE\_Lab9-IC:\Users\Jetpu\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Jetpu\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 534"--pd "_RTE_ SETA 1"--pd "TM4C123GH6PM SETA 1"--pd "_RTE_ SETA 1"--list .\startup.lst--xref -o .\startup.o--depend .\startup.d)
+F (.\Lab9.c)(0x67521835)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./lab9.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\tm4c123gh6pm.h)(0x66FF1403)
+I (..\inc\LaunchPad.h)(0x66FF1403)
+I (..\inc\PLL.h)(0x66FF1403)
+I (..\inc\ADCSWTrigger.h)(0x66FF1403)
+I (..\inc\esp8266.h)(0x67515ED9)
+I (..\inc\MQTT.h)(0x66FF1403)
+I (..\inc\SSD2119.h)(0x6742D286)
+I (..\inc\eDisk.h)(0x6748121D)
+I (..\inc\Timer0A.h)(0x66FF1403)
+I (..\inc\Timer1A.h)(0x66FF1403)
+I (..\inc\Timer2A.h)(0x66FF1403)
+I (..\inc\Timer3A.h)(0x66FF1403)
+I (..\inc\TLV5616.h)(0x6751364F)
+I (Sound.h)(0x67512727)
+I (Motor.h)(0x675212F1)
+I (SDCFile.h)(0x675198A5)
+I (..\inc\ST7735.h)(0x674E5028)
+I (SD-LCD.h)(0x6751364F)
+I (..\inc\UART.h)(0x66FF1403)
+I (..\inc\UART5.h)(0x67515ED9)
+F (..\inc\PLL.c)(0x66FF1403)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./pll.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\..\inc\PLL.h)(0x66FF1403)
+I (..\inc\..\inc\tm4c123gh6pm.h)(0x66FF1403)
+F (..\inc\SSD2119.c)(0x6742D394)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./ssd2119.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\..\inc\tm4c123gh6pm.h)(0x66FF1403)
+I (..\inc\..\inc\SSD2119.h)(0x6742D286)
+F (..\inc\SSD2119.h)(0x6742D286)()
+F (..\inc\Timer0A.h)(0x66FF1403)()
+F (..\inc\Timer0A.c)(0x66FF1403)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./timer0a.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\..\inc\tm4c123gh6pm.h)(0x66FF1403)
+I (..\inc\..\inc\CortexM.h)(0x66FF1403)
+F (..\inc\TLV5616.c)(0x6751364F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./tlv5616.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\..\inc\tm4c123gh6pm.h)(0x66FF1403)
+F (..\inc\TLV5616.h)(0x6751364F)()
+F (.\Sound.h)(0x67512727)()
+F (.\Sound.c)(0x6751353D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./sound.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (Sound.h)(0x67512727)
+I (..\inc\TLV5616.h)(0x6751364F)
+I (..\inc\Timer1A.h)(0x66FF1403)
+I (..\inc\tm4c123gh6pm.h)(0x66FF1403)
+I (SDCFile.h)(0x675198A5)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60365B78)
+F (..\inc\Timer1A.c)(0x66FF1403)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./timer1a.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\..\inc\tm4c123gh6pm.h)(0x66FF1403)
+F (..\inc\Timer1A.h)(0x66FF1403)()
+F (..\lib\SDCFile_4C123\ffconf.h)(0x672FEC10)()
+F (.\Motor.c)(0x675212F1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./motor.o -MD)
+I (..\inc\tm4c123gh6pm.h)(0x66FF1403)
+I (..\inc\CortexM.h)(0x66FF1403)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+F (.\Motor.h)(0x675212F1)()
+F (..\lib\SDCFile_4C123\diskio.h)(0x67490B75)()
+F (..\lib\SDCFile_4C123\ff.h)(0x67490B74)()
+F (..\lib\SDCFile_4C123\diskio.c)(0x674FFFD2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./diskio.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\tm4c123gh6pm.h)(0x66FF1403)
+I (..\lib\SDCFile_4C123\integer.h)(0x672FEC10)
+I (..\lib\SDCFile_4C123\diskio.h)(0x67490B75)
+F (..\lib\SDCFile_4C123\ff.c)(0x67490B75)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./ff.o -MD)
+I (..\lib\SDCFile_4C123\ff.h)(0x67490B74)
+I (..\lib\SDCFile_4C123\integer.h)(0x672FEC10)
+I (..\lib\SDCFile_4C123\ffconf.h)(0x672FEC10)
+I (..\lib\SDCFile_4C123\diskio.h)(0x67490B75)
+F (..\lib\SDCFile_4C123\integer.h)(0x672FEC10)()
+F (..\lib\SDCFile_4C123\SDCFile.c)(0x675212F1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./sdcfile.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\lib\SDCFile_4C123\diskio.h)(0x67490B75)
+I (..\lib\SDCFile_4C123\integer.h)(0x672FEC10)
+I (..\lib\SDCFile_4C123\ff.h)(0x67490B74)
+I (..\lib\SDCFile_4C123\ffconf.h)(0x672FEC10)
+I (..\inc\PLL.h)(0x66FF1403)
+I (..\lib\SDCFile_4C123\ST7735.h)(0x67490C35)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60365B78)
+I (..\inc\tm4c123gh6pm.h)(0x66FF1403)
+I (..\lib\SDCFile_4C123\..\..\src\Sound.h)(0x67512727)
+I (..\lib\SDCFile_4C123\..\..\inc\ST7735.h)(0x674E5028)
+F (..\inc\ST7735.c)(0x675212F1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./st7735.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\ST7735.h)(0x674E5028)
+I (..\inc\..\inc\tm4c123gh6pm.h)(0x66FF1403)
+F (.\SDCFile.h)(0x675198A5)()
+F (..\inc\Timer2A.c)(0x66FF1403)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./timer2a.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\..\inc\tm4c123gh6pm.h)(0x66FF1403)
+F (..\inc\Timer2A.h)(0x66FF1403)()
+F (.\SD-LCD.c)(0x675138DE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./sd-lcd.o -MD)
+I (SDCFile.h)(0x675198A5)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60365B78)
+I (..\inc\Timer2A.h)(0x66FF1403)
+I (Sound.h)(0x67512727)
+I (..\inc\ST7735.h)(0x674E5028)
+F (.\SD-LCD.h)(0x6751364F)()
+F (..\inc\UART.h)(0x66FF1403)()
+F (..\inc\UART.c)(0x67516F34)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./uart.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60365B78)
+I (..\inc\..\inc\UART.h)(0x66FF1403)
+I (..\inc\..\inc\tm4c123gh6pm.h)(0x66FF1403)
+F (..\inc\esp8266.c)(0x67520AF3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./esp8266.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60365B78)
+I (..\inc\tm4c123gh6pm.h)(0x66FF1403)
+I (..\inc\..\inc\UART.h)(0x66FF1403)
+I (..\inc\..\inc\UART5.h)(0x67515ED9)
+F (..\inc\MQTT.c)(0x6752199A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./mqtt.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60365B78)
+I (..\inc\tm4c123gh6pm.h)(0x66FF1403)
+I (..\inc\ST7735.h)(0x674E5028)
+I (..\inc\PLL.h)(0x66FF1403)
+I (..\inc\..\src\SDCFile.h)(0x675198A5)
+I (..\inc\UART.h)(0x66FF1403)
+I (..\inc\UART5.h)(0x67515ED9)
+I (..\inc\UART2.h)(0x66FF1403)
+I (..\inc\esp8266.h)(0x67515ED9)
+I (..\inc\..\src\Motor.h)(0x675212F1)
+F (..\inc\UART5.c)(0x67517463)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./uart5.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60365B78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\UART5.h)(0x67515ED9)
+I (..\inc\tm4c123gh6pm.h)(0x66FF1403)
+F (..\inc\UART5.h)(0x67515ED9)()
+F (..\inc\esp8266.h)(0x67515ED9)()
+F (..\inc\Timer3A.c)(0x66FF1403)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../..-I./RTE/_Lab9-IC:/Users/Jetpu/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Jetpu/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="534" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o ./timer3a.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60365B78)
+I (..\inc\..\inc\tm4c123gh6pm.h)(0x66FF1403)
+F (..\inc\Timer3A.h)(0x66FF1403)()
